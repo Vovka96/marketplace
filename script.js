@@ -21,4 +21,3 @@ fetch (url + '/products')
             productsGrid.append(pElem);
         });
     })
-    
