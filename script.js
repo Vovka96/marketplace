@@ -1,5 +1,6 @@
 let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
+let xhr = new XMLHttpRequest();
 let url = 'https://my-json-server.typicode.com/Vovka96/marketplace';
 
 xhr.open('GET',url + '/products');
