@@ -37,7 +37,7 @@ let cartProd = document.getElementById('cart-products');
 
 let cart = [];
 if(localStorage.getItem('cart')) {
-    cart.JSON.parse(localStorage.getItem('cart'));
+    cart = JSON.parse(localStorage.getItem('cart'));
     drawCartProducts();
 }
 
