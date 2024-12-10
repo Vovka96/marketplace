@@ -1,4 +1,4 @@
-let productsGrid = document.getElementById('product-grid');
+let productsGrid = document.getElementById('products-grid');
 let productsArray = [];
 let url = 'https://my-json-server.typicode.com/Vovka96/marketplace';
 
@@ -17,12 +17,20 @@ xhr.onload = function() {
             <p class='product-price'><b>Price: </b>${p.price}$</p>
             <p class='product-description'><b>Description: </b>${p.description}</p>
             <a href='userProfile.html?id=${p.author_id}'>Seller profile</a>
-            <button>Buy</button>
+            <button onclick="addProductToCart(${p.id})">Buy</button>
         `;
          productsGrid.append(pElem);
     });
 }
 xhr.send();
+
+function addProductToCart(id) {
+    xhr.open('GET',`${url}/products/${id}`);
+    xhr.responseType = 'json'
+    xhr.onload = function() {
+
+    }
+}
 
 let cartProd = document.getElementById('cart-products');
 

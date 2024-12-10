@@ -3,13 +3,15 @@
         {
             "id": 1,
             "name": "Vika",
-            "surname": "Onufrienko",
+            "sirname": "Onufrienko",
+            "photo_url": "https://avatars.githubusercontent.com/u/187861559?v=4",
             "balance": 1500
         },
         {
             "id": 2,
             "name": "Vova",
-            "surname": "Solodovnik",
+            "sirname": "Solodovnik",
+            "photo_url":"https://avatars.githubusercontent.com/u/28846031?s=96&v=4",
             "balance": 2500
         }
     ],
@@ -27,7 +29,7 @@
             "name": "Arduino UNO",
             "description": "Brand new and high quality.",
             "price": 180,
-            "author_id": 3,
+            "author_id": 2,
             "photo_url": "https://raw.githubusercontent.com/Vovka96/marketplace/main/img/arduino.jpeg"
         },
         {
@@ -51,7 +53,7 @@
             "name": "Resistor 10k Ohm",
             "description": "Can resist the voltage. Super cool.",
             "price": 180,
-            "author_id": 3,
+            "author_id": 1,
             "photo_url": "https://raw.githubusercontent.com/Vovka96/marketplace/main/img/resistor.png"
         },
         {
